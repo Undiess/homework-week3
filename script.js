@@ -14,13 +14,15 @@ function writePassword() {
 
 }
 
-
-// Add event listener to generate button
-// getting inputs from the user
-generateBtn.addEventListener("click", writePassword){
-  while (passwordLength => 8 || passwordLength <= 128){
-  var passwordLength = prompt("Enter a number between 8 and 128");
-  }
-  
-
+function UserInputs(){
+  var passwordLength = 0
+  while (passwordLength < 8 || passwordLength > 128){
+    var passwordLength = prompt("Enter a number between 8 and 128");
+    }  
+    console.log(passwordLength);
 }
+
+
+// Add event listener to generate buttons
+// getting inputs from the user
+generateBtn.addEventListener("click", UserInputs);
