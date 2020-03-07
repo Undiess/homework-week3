@@ -48,6 +48,9 @@ function UserInputs(){
     selectionCounter++;
   }
   console.log(selectionCounter);
+  var dividedPassword = math.ceil(passwordLength/3)
+  console.log*(dividedPassword)
+ 
 
 }
 
