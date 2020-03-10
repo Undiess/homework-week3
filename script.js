@@ -16,7 +16,7 @@ function writePassword(characterArray) {
 function UserInputs(){
   var passwordLength = 0
   while (passwordLength < 8 || passwordLength > 128){
-    var passwordLength = prompt("Enter a number between 8 and 128");
+    var passwordLength = prompt("How long do you want your password to be from 8 - 128");
     } 
 
   var uppercase = confirm("would you like uppercase");
@@ -52,7 +52,7 @@ function UserInputs(){
   dividedPassword = Math.round(passwordLength/selectionCounter);
   console.log(dividedPassword);
  // Creating 4 arrays filled with random characters
- var uppercaseArray = "";
+ var uppercaseArray = " ";
   if (uppercase == true){ 
         var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         for (var i = 0; i < dividedPassword; i++)
@@ -60,7 +60,7 @@ function UserInputs(){
         console.log(uppercaseArray);
       }
 
-  var lowercaseArray = "";
+  var lowercaseArray = " ";
   if (lowercase == true){
       var possible = "abcdefghijklmnopqrstuvwxyz";
       for (var i = 0; i < dividedPassword; i++)
@@ -68,7 +68,7 @@ function UserInputs(){
       console.log(lowercaseArray);
     }
 
-var numbersArray = "";
+var numbersArray = " ";
   if (number == true){
       var possible = "0123456789";
       for (var i = 0; i < dividedPassword; i++)
@@ -76,7 +76,7 @@ var numbersArray = "";
       console.log(numbersArray);
     }
   
-var specialCharactersArray = "";
+var specialCharactersArray = " ";
     if (specialCharacters == true){
       var possible = "!#$%&()*+,-./:;<=>?@[\]^_{|}~";
       for (var i = 0; i < dividedPassword; i++)
