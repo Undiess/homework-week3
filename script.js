@@ -96,17 +96,13 @@ function UserInputs(){
     
         // Pick a remaining element…
         var i = Math.floor(Math.random() * m--);
-        console.log(i)
+        console.log(m)
     
         // And swap it with the current element.
         var t = characterArray[m];
         characterArray[m] = characterArray[i];
-        characterArray[i] = t;
-      console.log(characterArray)
-    
-      writePassword(characterArray);
     }
-    
+    writePassword(characterArray);
     
     }
     
