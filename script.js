@@ -47,10 +47,25 @@ function UserInputs(){
   if (specialCharacters== true){
     selectionCounter++;
   }
+  //dividing number of characters to options selected to get an even number of each options in password.
   console.log(selectionCounter);
-  var dividedPassword = math.ceil(passwordLength/3)
-  console.log*(dividedPassword)
- 
+  var dividedPassword = 0;
+  dividedPassword = Math.round(passwordLength/selectionCounter);
+  console.log(dividedPassword);
+ // Creating 4 arrays filled with random characters
+  if (uppercase== true){ 
+
+  }
+
+  if lowercase == true){
+
+  }
+  if (numbers == true){
+
+  }
+  if (specialCharacters == true){
+    
+  }
 
 }
 
