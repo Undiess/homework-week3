@@ -52,33 +52,32 @@ function UserInputs(){
   dividedPassword = Math.round(passwordLength/selectionCounter);
   console.log(dividedPassword);
  // Creating 4 arrays filled with random characters
+ var uppercaseArray = "";
   if (uppercase == true){ 
-        var uppercaseArray = "";
         var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         for (var i = 0; i < dividedPassword; i++)
           uppercaseArray += possible.charAt(Math.floor(Math.random() * possible.length));
         console.log(uppercaseArray);
       }
 
+  var lowercaseArray = "";
   if (lowercase == true){
-      var lowercaseArray = "";
       var possible = "abcdefghijklmnopqrstuvwxyz";
       for (var i = 0; i < dividedPassword; i++)
         lowercaseArray += possible.charAt(Math.floor(Math.random() * possible.length));
       console.log(lowercaseArray);
     }
 
+var numbersArray = "";
   if (number == true){
-      var numbersArray = "";
       var possible = "0123456789";
       for (var i = 0; i < dividedPassword; i++)
         numbersArray += possible.charAt(Math.floor(Math.random() * possible.length));
       console.log(numbersArray);
     }
   
-
+var specialCharactersArray = "";
     if (specialCharacters == true){
-      var specialCharactersArray = "";
       var possible = "!#$%&()*+,-./:;<=>?@[\]^_{|}~";
       for (var i = 0; i < dividedPassword; i++)
         specialCharactersArray += possible.charAt(Math.floor(Math.random() * possible.length));
